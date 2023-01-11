@@ -4,7 +4,7 @@
 ### Step 1: Installing VSCode
 VSCode is an integrated development environment (IDE) that provides many features related to programming. Of relevance today, it provides a shell (terminal) that can connect to a remote server. 
 
-Install VSCode from the following link, and follow the specified instructions (which shuld be self explanatory): [VSCode website](https://code.visualstudio.com/)
+Install VSCode from the following link, and follow the specified instructions (which should be self explanatory): [VSCode website](https://code.visualstudio.com/)
 
 Once you open VSCode, it should look something like this.
 
