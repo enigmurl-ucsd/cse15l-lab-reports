@@ -59,7 +59,7 @@ public void testMerge() {
 }
 ```
 
-On the contrary, an input that does not cause a failure would be one where the first list contains the maximum, so we can just swap the two list.s
+On the contrary, an input that does not cause a failure would be one where the first list contains the maximum, so we can just swap the two lists.
 ```
 @Test(timeout = 10000)
 public void testMerge() {
