@@ -9,7 +9,7 @@ From here, we first make sure that the request is in the format that we want, an
 ![line 2](p1-line2.png)
 Between API calls, the state is persistent so the state string is still `"first line example\n"`
 The same routing goes on as happened with the first line, and we also perform the same checks to ensure the input is sanitized to the correct format. 
-When we access `localhost:8080/add-message?s=second%20line%20example` we now append the second line to our running state. The entire state is now `"first line example\nsecondline example\n"` We return this string to the user. Note that while the state does not change, the local variables and parameters to the handle request method do change, and are updated to reflect the new request (as opposed to having a URI point to the old call), which makes sense. 
+When we access `localhost:8080/add-message?s=second%20line%20example` we now append the second line to our running state. The entire state is now `"first line example\nsecondline example\n"` We return this string to the user. Note that while the state does not change between runs (of course, once we update running it will change, but in terms of what happens before the handle is called, the state is just as it was after the first API call), the local variables and parameters to the handle request method do change, and are updated to reflect the new request (as opposed to having a URI point to the old call), which makes sense. 
 
 Here is the code for my class (the URLHandler was unmodified from the starter code)
 ```
