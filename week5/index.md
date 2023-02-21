@@ -15,12 +15,14 @@ I will be summarizing my research on four interesting options on the UNIX `find`
     written_2/travel_guides
     ```
     B. In written_2, a find call with depth = 2 reveals only the second level of paths. In this case, they are again all directories. I also tries with depth=3, which just showed all of the txt files.
-    '''
+
+    ```
     manubhat@manus-laptop skill-demo1-data % find written_2 -depth 2
     written_2/non-fiction/OUP
     written_2/travel_guides/berlitz1
     written_2/travel_guides/berlitz2
-    '''
+    ```
+
 2. `-delete` 
     Summary: This option allows us to delete the files and directories that are generated. This is more powerful than `rm`, since we can combine the other utilities of find to delete exactly the files we want
     
