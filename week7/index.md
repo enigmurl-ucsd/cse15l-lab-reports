@@ -24,7 +24,15 @@ Here are a few screenshots of the entire process one I log in. I show the main t
 1. I just copy pasted this command into the terminal (after doing `ssh cs15lwi23axm@ieng6.ucsd.edu ` ), this was how I won the competition :).
 
     ```
-    git clone git@github.com:mbhat-ucsd/lab7.git ; cd lab7 ; javac -cp ".:./lib/*" *.java ; java -cp ".:./lib/*" org.junit.runner.JUnitCore TestListExamples ; vim ListExamples.java ; javac -cp ".:./lib/*" *.java ; java -cp ".:./lib/*" org.junit.runner.JUnitCore TestListExamples ;  git add -A ; git commit -m "X" ; git push
+    git clone git@github.com:mbhat-ucsd/lab7.git ; 
+        cd lab7 ; javac -cp ".:./lib/*" *.java ; 
+        java -cp ".:./lib/*" org.junit.runner.JUnitCore TestListExamples ; 
+        vim ListExamples.java ; 
+        javac -cp ".:./lib/*" *.java ; 
+        java -cp ".:./lib/*" org.junit.runner.JUnitCore TestListExamples ; 
+        git add -A ; 
+        git commit -m "X" ; 
+        git push
     ```
 
 2. To actually edit the file, I had the vim open at the previous time I opened the file, which was in the perfect place for me to edit (the actual vim command is also in my one liner). I got a score of 15 seconds.
