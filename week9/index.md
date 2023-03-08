@@ -219,7 +219,7 @@ I used the same debugging classes, so I only had to do a different run, which us
 
 ```jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore LinkedListTests```
 
-I used a similar technique to the above two, and those few instructions pretty much allow me to do anything! One thing I did use differently was step up, which was necessary since I accidentallyed used step instead of next in one place. I was able to realize that the list method append was not acting properly, which led to the size of the linkedlist acting funnily. Another thing that made testing hard was that the timeout limit was being reached while I did debugging, so JUnit marked the test wrong before I evn finished, which I resolved by using a higher threshold so I could actually debug. Heres my full output:
+I used a similar technique to the above two, and those few instructions pretty much allow me to do anything! One thing I did use differently was step up, which was necessary since I accidentally used step instead of next in one place. I was able to realize that the list method append was not acting properly, which led to the size of the linkedlist acting funnily. Another thing that made testing hard was that the timeout limit was being reached while I did debugging, so JUnit marked the test wrong before I evn finished, which I resolved by using a higher threshold so I could actually debug. Heres my full output:
 
 ```
 (base) manubhat@manus-laptop lab9 % jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListTests
